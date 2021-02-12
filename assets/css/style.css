@@ -11,7 +11,25 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #444444;
+  background: #343434;
 }
+body{
+ background: url("../img/backgorund/black.jpg");
+ background:  auto;
+  opacity: 1;
+ background-size: contain;
+}
+
+/* .form-control{
+  b--radius: 0.3rem;
+} */
+
+.ficon {
+  position: center;
+  width: auto;
+  max-width: 100px;
+}
+
 
 a {
   color: #ffb03b;
@@ -544,7 +562,12 @@ section {
 }
 
 .section-bg {
-  background-color: white;
+  padding: 80px 0;
+  background: url("../img/backgorund/2928722.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  /* opacity: 0.8 */
 }
 
 .section-title {
@@ -556,7 +579,7 @@ section {
   margin: 15px 0 0 0;
   font-size: 32px;
   font-weight: 700;
-  color: #5f5950;
+  color: #fff;
 }
 
 .section-title h2 span {
@@ -638,17 +661,23 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: #fffaf3;
+  background: #ffb03b;
 }
 
 .about .content {
   padding: 0 80px;
 }
 
+.about .content h2 {
+  font-weight: 400;
+  font-size: 34px;
+  color: #301f05;
+}
+
 .about .content h3 {
   font-weight: 400;
   font-size: 34px;
-  color: #5f5950;
+  color: #301f05;
 }
 
 .about .content h4 {
@@ -659,7 +688,12 @@ section {
 
 .about .content p {
   font-size: 15px;
-  color: #848484;
+  color: #0a0a0a;
+}
+
+.about .content li {
+  font-size: 15px;
+  color: #0a0a0a;
 }
 
 .about .content ul {
@@ -678,7 +712,7 @@ section {
 
 .about .content ul i {
   font-size: 20px;
-  color: #ffb03b;
+  color: #0a0a0a;
   position: absolute;
   left: 0;
   top: 2px;
@@ -808,7 +842,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Whu Us
+# Why Us
 --------------------------------------------------------------*/
 .why-us .box {
   padding: 50px 30px;
@@ -828,11 +862,11 @@ section {
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: #6c665c;
+  color: #fff;
 }
 
 .why-us .box p {
-  color: #aaaaaa;
+  color: #fff;
   font-size: 15px;
   margin: 0;
   padding: 0;
@@ -950,7 +984,7 @@ section {
   border: 0;
   padding: 12px 15px 12px 0;
   transition: 0.3s;
-  color: #433f39;
+  color: #e8e7e4;
   border-radius: 0;
   border-right: 2px solid #e8e7e4;
   font-weight: 600;
@@ -997,129 +1031,24 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Events
---------------------------------------------------------------*/
-.events {
-  background: url(../img/events-bg.jpg) center center no-repeat;
-  background-size: cover;
-  position: relative;
+.sepecial2 {
+  -webkit-text-stroke: 1px #433f39;
 }
 
-.events::before {
-  content: '';
-  background-color: rgba(12, 11, 10, 0.8);
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+.backgmenu {
+    background-color: rgba(0,0,0,0.8);
+    opacity: 1;
 }
 
-.events .section-title h2 {
-  color: #fff;
+.tintura {
+color: #ffb03b;
+/* -webkit-text-stroke: 1px white; */
+text-shadow: 2px 0 0 #fffdfd;
 }
 
-.events .container {
-  position: relative;
-}
-
-@media (min-width: 1024px) {
-  .events {
-    background-attachment: fixed;
-  }
-}
-
-.events .events-carousel {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 30px;
-}
-
-.events .event-item {
-  color: #fff;
-}
-
-.events .event-item h3 {
-  font-weight: 600;
-  font-size: 26px;
+.contenido h2{
   color: #ffb03b;
-}
-
-.events .event-item .price {
-  font-size: 26px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-.events .event-item .price span {
-  border-bottom: 2px solid #ffb03b;
-}
-
-.events .event-item ul {
-  list-style: none;
-  padding: 0;
-}
-
-.events .event-item ul li {
-  padding-bottom: 10px;
-}
-
-.events .event-item ul i {
-  font-size: 20px;
-  padding-right: 4px;
-  color: #ffb03b;
-}
-
-.events .event-item p:last-child {
-  margin-bottom: 0;
-}
-
-.events .owl-nav, .events .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-.events .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd !important;
-}
-
-.events .owl-dot.active {
-  background-color: #ffb03b !important;
-}
-
-@media (min-width: 992px) {
-  .events .testimonial-item p {
-    width: 80%;
   }
-}
-
-
-/*--------------------------------------------------------------
-# Gallery
---------------------------------------------------------------*/
-.gallery {
-  padding-bottom: 0;
-}
-
-.gallery .gallery-item {
-  overflow: hidden;
-  border-right: 3px solid #fff;
-  border-bottom: 3px solid #fff;
-}
-
-.gallery .gallery-item img {
-  transition: all ease-in-out 0.4s;
-}
-
-.gallery .gallery-item:hover img {
-  transform: scale(1.1);
-}
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -1241,8 +1170,14 @@ section {
 }
 
 .contact .info {
-  background: #fff;
+  /* background: #fff; */
 }
+
+.contact {
+  background-color: (198, 16, 0, 0);
+  opacity: 1;
+}
+
 
 .contact .info i {
   font-size: 20px;
@@ -1263,7 +1198,7 @@ section {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #433f39;
+  color: #ffb03b;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1271,19 +1206,21 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #7a7368;
+  /* color: #7a7368; */
+  color: #ffb03b;
+  text-shadow: 2px 0 0 #000;
 }
 
 .contact .info:hover i {
   background: #ffb03b;
-  color: #fff;
+  color: #ffb03b;
 }
 
 .contact .php-email-form {
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   padding: 30px;
-  background: #fff;
+  /* background: #fff; */
 }
 
 .contact .php-email-form .form-group {
@@ -1337,7 +1274,7 @@ section {
 }
 
 .contact .php-email-form input, .contact .php-email-form textarea {
-  border-radius: 0;
+  border-radius: 0.3;
   box-shadow: none;
   font-size: 14px;
 }
@@ -1357,6 +1294,7 @@ section {
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
+  border-radius: 0.3rem;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
@@ -1385,7 +1323,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #35322d;
+  background: black;
   color: #fff;
   font-size: 14px;
   text-align: center;
@@ -1470,7 +1408,8 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #428bca;
+  /* background: #428bca; */
+  background: #ffb03b;
   color: #fff;
 }
 
@@ -1502,7 +1441,8 @@ section {
   right: 0;
   transition: 0.3s;
   text-align: center;
-  background: rgba(31, 53, 72, 0.6);
+  /* background: rgba(31, 53, 72, 0.6); */
+  background: #ffb03b;
   padding-bottom: 30px;
 }
 
@@ -1590,7 +1530,7 @@ section {
   position: absolute;
   right: 0;
   bottom: -70px;
-  background: #fff;
+  background: black;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   z-index: 2;
 }
@@ -1623,6 +1563,9 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
 }
+
+
+
 
 .portfolio-details .portfolio-description p {
   padding: 0 0 0 0;

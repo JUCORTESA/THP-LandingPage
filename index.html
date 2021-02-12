@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo/logo.png" rel="icon">
+  <link href="assets/img/logo/logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -24,8 +24,22 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+<!-- reference to Leaflet CSS -->
+<link rel="stylesheet" href="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.3/leaflet.css" />
+
+<!-- reference to Leaflet JavaScript -->
+<script src="https://d19vzq90twjlae.cloudfront.net/leaflet-0.7.3/leaflet.js"></script>
+
+<style>
+  #map {
+      height:500px;
+      width: auto;
+  }
+  </style>
 
 </head>
 
@@ -34,37 +48,36 @@
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-none d-lg-flex align-items-center fixed-top topbar-transparent">
     <div class="container text-right">
-      <i class="icofont-phone"></i> 311 258 1779
-      <i class="icofont-clock-time icofont-rotate-180"></i> Lun-Dom: 08:00 AM - 08:00 PM
-      <i></i>               
-      <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
-      <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
-      <a href="https://www.instagram.com/thp_factory/" class="instagram"><i class="icofont-instagram"></i></a>  
+      <i class="icofont-phone"></i> 321 229 6927
+      <i class="icofont-clock-time icofont-rotate-180"></i> Mar-Dom: 10:00 AM - 09:00 PM
+      <i></i>
+      <!--<a href="#" class="facebook"><i class="icofont-facebook"></i></a>-->
+      <a href="https://www.instagram.com/thp_factory/" class="instagram"><i class="icofont-instagram"></i></a>
     </div>
-    
+
 
   </section>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-transparent">
     <div class="container d-flex align-items-center">
-      
+
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>THP</span></a></h1>
+
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <a href="index.html"><img src="assets/img/logo/logo.png" alt="" width="100" height="350"></a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="#about">Acerca de Nosotros</a></li>
-          <li><a href="#portfolio">Menu</a></li>
-          <li><a href="#specials">Productos</a></li>
+          <li><a href="#portfolio">Productos</a></li>
+          <li><a href="#specials">Menú</a></li>
           <li><a href="#testimonials">Testimonios</a></li>
-          <li><a href="#contact">Contactanos</a></li>
+          <li><a href="#contact">Contáctanos</a></li>
 
-          <li class="book-a-table text-center"><a href="https://wa.me/573044673277">Domicilios</a></li>
+          <li class="book-a-table text-center"><a href="https://wa.me/573212296927">Domicilios</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -87,8 +100,8 @@
                 <h2 class="animate__animated animate__fadeInDown"><span>THP</span> Domicilios</h2>
                 <p class="animate__animated animate__fadeInUp">Dejate tentar por nuestros fabulosos productos</p>
                 <div>
-                  <a href="#portfolio" class="btn-menu animate__animated animate__fadeInUp scrollto">Menu</a>
-                  <a href="https://wa.me/573044673277" class="btn-book animate__animated animate__fadeInUp scrollto">Pedir domicilio</a>
+                  <a href="#specials" class="btn-menu animate__animated animate__fadeInUp scrollto">Menu</a>
+                  <a href="https://wa.me/573212296927" class="btn-book animate__animated animate__fadeInUp scrollto">Pedir domicilio</a>
                 </div>
               </div>
             </div>
@@ -98,11 +111,11 @@
           <div class="carousel-item" style="background: url(assets/img/slide/slide-2.jpg);">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Con ganas de comer algo rico?</h2>
+                <h2 class="animate__animated animate__fadeInDown">¿Con ganas de comer algo rico?</h2>
                 <p class="animate__animated animate__fadeInUp">Si es de THP sabe mejor!</p>
                 <div>
-                  <a href="#portfolio" class="btn-menu animate__animated animate__fadeInUp scrollto">Menu</a>
-                  <a href="https://wa.me/573044673277" class="btn-book animate__animated animate__fadeInUp scrollto">Pedir domicilio</a>
+                  <a href="#specials" class="btn-menu animate__animated animate__fadeInUp scrollto">Menú</a>
+                  <a href="https://wa.me/573212296927" class="btn-book animate__animated animate__fadeInUp scrollto">Pedir domicilio</a>
                 </div>
               </div>
             </div>
@@ -128,7 +141,7 @@
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
-      <div class="container-fluid data-aos="fade-up" data-aos-delay="100"">
+      <div class="container">
 
         <div class="row">
 
@@ -138,7 +151,7 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
             <div class="content">
-              <h3> <strong>Acerca de Nosotros</strong></h3>
+              <h2> <strong>Acerca de Nosotros</strong></h3>
               <p>
                 THP nace como un sueño de dos chef que quiesieron compartir su vision de la comida.
               </p>
@@ -146,9 +159,11 @@
                 Dejate tentar por nuestros productos
               </p>
               <ul>
+                <li><i class="bx bx-check-double"></i> Nachos</li>
+                <li><i class="bx bx-check-double"></i> Chicharrones</li>
                 <li><i class="bx bx-check-double"></i> Hamburguesas</li>
-                <li><i class="bx bx-check-double"></i> Arepas</li>
-                <li><i class="bx bx-check-double"></i> Chorizo</li>
+                <li><i class="bx bx-check-double"></i> Tacos</li>
+                <li><i class="bx bx-check-double"></i> Perros Calientes</li>
               </ul>
               <p>
                 Productos con normas de bioseguridad
@@ -168,7 +183,7 @@
 
         <div class="section-title">
           <h2>Por que elegir <span>THP</span></h2>
-          <p>Productos listos para preparar</p>
+          <p style="-webkit-text-stroke: 1px white;">Productos listos para preparar</p>
         </div>
 
         <div class="row">
@@ -200,167 +215,221 @@
         </div>
 
       </div>
-    </section><!-- End Whu Us Section -->
+    </section><!-- End Why Us Section -->
 
 <!-- ======= Menu Section ======= -->
 <section id="portfolio" class="portfolio section-bg">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
       <div class="section-title">
-        <h2>Nuestro Portfolio</h2>
-        <p>Dejete tentar por nuestros productos</p>
+        <h2>Nuestros Productos</h2>
+        <p style="-webkit-text-stroke: 1px white;" >Dejete tentar por nuestros productos</p>
       </div>
 
       <div class="row">
         <div class="col-lg-12">
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">Todos</li>
-            <li data-filter=".filter-arepa">Arepas</li>
-            <li data-filter=".filter-carne">Carne Desmechada</li>
-            <li data-filter=".filter-chicarron">Chicharrón</li>
-            <li data-filter=".filter-chorizo">Chorizo</li>
-            <li data-filter=".filter-hamburguesa">Hamburguesa</li>
-          </ul>
+            <li data-filter=".filter-compartir">Pa`compartir </li>
+            <li data-filter=".filter-hamburguesa">Hamburguesas</li>
+            <li data-filter=".filter-tacos">Tacos</li>           
+            <li data-filter=".filter-perros">Perros Calientes</li>
         </div>
       </div>
 
       <div class="row portfolio-container">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-arepa">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-compartir">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/nachos-1.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Arepa de yuca</h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-carne">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Carne Desmechada</h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-chicarron">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Chicharron</h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-chorizo">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Chorizo</h4>
+              <h4>Nachos</h4>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-hamburguesa">
           <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <img src="assets/img/portfolio/burger-1.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Hamburguesa</h4>
+              <h4>Hamburguesas</h4>
             </div>
           </div>
         </div>
-      </div>
 
+        <div class="col-lg-4 col-md-6 portfolio-item filter-tacos">
+          <div class="portfolio-wrap">
+            <!--<a href="#specials" class="scrollto"></a> -->
+            <img src="assets/img/portfolio/tacos-1.jpg" class="img-fluid" alt="">
+          
+            <div class="portfolio-info">
+              <h4>Tacos</h4>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-compartir">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/chicharron.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Chicharrones/h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-hamburguesa">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/burger-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>La Coronada</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-hamburguesa">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/burger-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>La Propia</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-perros">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/perros1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Perros Calientes</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-perros">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/perros-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Perros Calientes</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </div>
 </section><!-- End Gallery Section -->
 
-    <!-- ======= Specials Section ======= -->
+    <!-- ======= Nuestros Productos Section ======= -->
     <section id="specials" class="specials">
       <div class="container">
 
         <div class="section-title">
-          <h2>Nuestros <span>Productos</span></h2>
-          <p>Productos listos para cocinar</p>
+          <h2>Nuestro <span>Menú</span></h2>
+          
         </div>
-
+        <!-- ======= Navigation bar ======= -->
         <div class="row">
-          <div class="col-lg-3">
+          <div class="col-lg-3 backgmenu">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-toggle="tab" href="#tab-1">Arepa</a>
+                <a class="nav-link active show" data-toggle="tab" href="#tab-1">Pa`compartir </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-2">Carne Desmechada</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-2">Hamburguesas </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-3">Chicharrón</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-3">Tacos </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-4">Chorizo</a>
+                <a class="nav-link" data-toggle="tab" href="#tab-4">Perros Calientes </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab-5">Hamburguesa</a>
-              </li>
+
             </ul>
           </div>
+          <!-- ======= Content ======= -->
           <div class="col-lg-9 mt-4 mt-lg-0">
             <div class="tab-content">
               <div class="tab-pane active show" id="tab-1">
                 <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Arepas</h3>
-                    <p class="font-italic">Deliciosas arepas de yuca</p>
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2>Nachos con chili</h2>
+                    <p style="color: #ffe9c7" class="font-italic">Nachos con porción de chili con carne, porción de guacamole y porción de crema agria</p>
                   </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/portfolio/portfolio-8.jpg" alt="" class="img-fluid">
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2>Nachos con cochinita pibil</h2>
+                    <p style="color: #ffe9c7" class="font-italic">Nachos con porción de cochinita pibil, porción de guacamole y porción de crema agria</p>
+                  </div>
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2 >Nachos con pollo</h2>
+                    <p style="color: #ffe9c7" class="font-italic">Nachos con porción de pollo desmechado en aderezo de cilantro, porción de guacamole y porción de crema agria</p>
+                  </div>
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2 >Chicharronada</h2>
+                    <p style="color: #ffe9c7" class="font-italic">500 gr de Panceta acompañada de Plátano maduro y Suero costeño</p>
                   </div>
                 </div>
               </div>
+
               <div class="tab-pane" id="tab-2">
                 <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Carne Desmechada</h3>
-                    <p class="font-italic">No esperes horas para desmechar la carne, comprala ya hecha</p>
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2>La clásica</h2>
+                    <p style="color: #ffe9c7" class="font-italic">30 gr de Carne de hamburguesa premium en cama de lechuga, tomates y cebolla caramelizada, con queso mozzarella, salsa bbq y salsa de maíz en pan de papa</p>
                   </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/portfolio/portfolio-7.jpg" alt="" class="img-fluid">
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2>La mexicana</h2>
+                    <p style="color: #ffe9c7" class="font-italic">130 gr de carne de hamburguesa premium junto con guacamole rustico, nachos, jalapeño encurtido y queso mozzarella en pan de papa</p>
                   </div>
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2>La doble</h2>
+                    <p style="color: #ffe9c7" class="font-italic">260 gr de carne de hamburguesa premium con doble tocineta y doble queso mozzarella en cama de lechuga, salsa bbq y salsa de maíz en pan de papa</p>
+                  </div>
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2>La coronada</h2>
+                    <p style="color: #ffe9c7" class="font-italic">130 gr de carne de hamburguesa premium en cama de lechuga, plátano maduro, 2 aros de cebolla apanados, con queso americano y salsa mostaneza en pan de papa</p>
+                  </div>
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2>La propia</h2>
+                    <p style="color: #ffe9c7" class="font-italic">130 gr de carne de hamburguesa premium en cama de lechuga, pico de gallo, nachos y tocineta, con queso americano en pan de papa</p>
+                  </div>
+
                 </div>
               </div>
               <div class="tab-pane" id="tab-3">
                 <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Chicharrónes</h3>
-                    <p class="font-italic">Delicioso chicharron crocante</p>
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2>Cochinita pibil</h2>
+                    <p style="color: #ffe9c7" class="font-italic">Carne de cerdo marinada en salsa de achiote y naranja, con cebolla encurtida, jalapeño encurtido y cilantro en tortilla de maíz</p>
                   </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/portfolio/portfolio-3.jpg" alt="" class="img-fluid">
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2>Taco de pollo</h2>
+                    <p style="color: #ffe9c7" class="font-italic">Pollo desmechado en aderezo de cilantro con queso mozzarella y tocineta en tortilla de maíz </p>
                   </div>
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2>Taco de chorizo</h2>
+                    <p style="color: #ffe9c7" class="font-italic">Chorizo de cerdo a la parrilla con pico de gallo y jalapeño encurtido en tortilla de maíz </p>
+                  </div>
+
                 </div>
               </div>
+              
               <div class="tab-pane" id="tab-4">
                 <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Chorizos</h3>
-                    <p class="font-italic">Chorizo sin conservantes</p>
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2>El clásico</h2>
+                    <p style="color: #ffe9c7" class="font-italic">Salchicha a elección (americana o artesanal THP) con queso mozzarella, cebolla morada picada, trozos de tocineta y 3 salsas a elección.</p>
                   </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/portfolio/portfolio-4.jpg" alt="" class="img-fluid">
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2>El mex</h2>
+                    <p style="color: #ffe9c7" class="font-italic">Salchicha a elección (americana o artesanal THP) con queso mozzarella, pico de gallo al estilo THP y 3 salsas a elección. </p>
                   </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-5">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Hamburguesas</h3>
-                    <p class="font-italic">Hamburguesa 100% carne</p>
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2>El extravagante</h2>
+                    <p style="color: #ffe9c7" class="font-italic">Salchicha a elección (americana o artesanal THP) con queso mozzarella, cebolla sofreída en mantequilla, pepinillos y 3 salsas a elección </p>
                   </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/portfolio/portfolio-6.jpg" alt="" class="img-fluid">
+                  <div class="col-lg-8 details order-2 order-lg-1 contenido">
+                    <h2>El propio</h2>
+                    <p style="color: #ffe9c7" class="font-italic">Salchicha a elección (americana o artesanal THP) con queso mozzarella, guacamole rustico, trozos de nachos y 3 salsas a elección</p>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -368,7 +437,7 @@
       </div>
     </section><!-- End Specials Section -->
 
-    
+
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
@@ -420,8 +489,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2><span>Contactanos</span></h2>
-          <p>Queremos conocer tu opinión</p>
+          <h2><span style="text-shadow: 3px 0 0 #000">Contactanos</span></h2>
+          <p style="-webkit-text-stroke: 1px #ffb03b;">Queremos conocer tu opinión</p>
         </div>
       </div>
 
@@ -431,26 +500,26 @@
           <div class="row">
             <div class="col-lg-3 col-md-6 info">
               <i class="icofont-google-map"></i>
-              <h4>Ubicación:</h4>
-              <p>Calle 58a 35a - 10<br>Nicolás de Federmán</p>
+              <h4 >Ubicación:</h4>
+              <p  >Calle 71 a # 14 a - 22<br>Barrios Unidos</p>
             </div>
 
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
               <i class="icofont-clock-time icofont-rotate-90"></i>
-              <h4>Horario:</h4>
-              <p>Lunes-Domingo:<br>8:00 AM - 8:00 PM</p>
+              <h4  >Horario:</h4>
+              <p>Martes-Domingo:<br>10:00 AM - 9:00 PM</p>
             </div>
 
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
               <i class="icofont-envelope"></i>
-              <h4>Email:</h4>
-              <p>contact@example.com</p>
+              <h4 >Email:</h4>
+              <p>Thp.factory.sas@gmail.com</p>
             </div>
 
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
               <i class="icofont-phone"></i>
-              <h4>Celular:</h4>
-              <p>311 258 1779</p>
+              <h4  >Celular:</h4>
+              <p>321 229 6927</p>
             </div>
           </div>
         </div>
@@ -487,15 +556,43 @@
 
   </main><!-- End #main -->
 
+ <!-- ======= Map ======= -->
+
+  <!-- place holder for map -->
+  <div class="container">
+
+    <div class="section-title">
+      <h2><span style="text-shadow: 3px 0 0 #000">Area de cobertura</span></h2>
+    </div>
+  </div>
+  <div id="map">
+  </div>
+
+<script>
+
+  // create map object, tell it to live in 'map' div and give initial latitude, longitude, zoom values
+  // pass option to turn scroll wheel zoom off
+  var map = L.map('map',{scrollWheelZoom:false}).setView([4.65927, -74.06331], 13);
+
+  // add base map tiles from OpenStreetMap and attribution info to 'map' div
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  // add circle by passing center, radius, and some basic styles
+  L.circle([4.65927, -74.06331], 5000,{color:'yellow',opacity:1,fillColor: 'blue',fillOpacity:.4}).addTo(map);
+  
+</script>
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>THP</h3>
+      <h3> <img class="ficon" src="assets\img\logo\logo.png" > </h3>
       <p>Comida 100% artesanal</p>
-      <div class="social-links">
+      <!--<div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/thp_factory/" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.instagram.com/thp_factory/" class="instagram"><i class="bx bxl-instagram"></i></a>-->
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
@@ -513,6 +610,8 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+
+ 
 </body>
 
 </html>
