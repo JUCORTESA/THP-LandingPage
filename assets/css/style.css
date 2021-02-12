@@ -14,9 +14,9 @@ body {
   background: #343434;
 }
 body{
- background: url("../img/backgorund/black.jpg");
+ background-image: url("../img/backgorund/black.jpg");
  background:  auto;
-  opacity: 1;
+ opacity: 1;
  background-size: contain;
 }
 
@@ -564,6 +564,15 @@ section {
 .section-bg {
   padding: 80px 0;
   background: url("../img/backgorund/2928722.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  /* opacity: 0.8 */
+}
+
+.section-mn {
+  padding: 80px 0;
+  background: url("../img/backgorund/pattern-1.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
