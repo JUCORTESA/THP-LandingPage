@@ -230,3 +230,12 @@
   });
 
 })(jQuery);
+
+// Init modal - menu as popup
+$(document).ready(function() {
+
+  if(window.location.href.indexOf('#menu') != -1) {
+    $('#myModal').modal('show');
+  }
+
+});
