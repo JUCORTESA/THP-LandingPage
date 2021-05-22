@@ -217,12 +217,45 @@
       </div>
     </section><!-- End Why Us Section -->
 
+
+
     <!-- ======= Nuestros Productos Section ======= -->
     <section id="specials" class="specials section-mn">
       <div class="container">
 
         <div class="section-title">
           <h2>Nuestro <span>Menú</span></h2>
+    
+          <!--Modal-->
+
+
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-warning" data-toggle="modal" data-target="#myModal">Visualiza Nuestro Menú</button>
+      <!-- Modal -->
+      <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <!--<h4 class="modal-title">Modal Header</h4>-->
+                  </div>
+                  <div class="modal-body">
+                    
+                      <iframe frameborder="0" scrolling="no" width="100%" height="800px" src="https://drive.google.com/file/d/1BK864Y86uPdRr6RkL4DZeF_Uva3THUSL/preview">
+                      </iframe>
+
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+    <!--Modal Ends-->
           
         </div>
         <!-- ======= Navigation bar ======= -->
@@ -479,7 +512,7 @@
             </div>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Me gustan sus productos. Las arepas de yuca son algo poco visto, sin duda valen la pena.
+              Me gustan sus productos. Las hamburguesas, sin duda valen la pena.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
           </div>
@@ -506,7 +539,7 @@
             <div class="col-lg-3 col-md-6 info">
               <i class="icofont-google-map"></i>
               <h4 >Ubicación:</h4>
-              <p  >Calle 71 a # 14 a - 22<br>San Felipe</p>
+              <p  >Calle 64 # 7 - 72<br>Chapinero Central</p>
             </div>
 
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
@@ -553,7 +586,7 @@
             <div class="error-message"></div>
             <div class="sent-message">Se ha enviado tu mensaje. Gracias por contactarnos!</div>
           </div>
-          <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+          <div class="text-center"><button type="submit" name="submit">Enviar Mensaje</button></div>
         </form>
 
       </div>
@@ -585,7 +618,7 @@
   }).addTo(map);
 
   // add circle by passing center, radius, and some basic styles
-  L.circle([4.65927, -74.06331], 5000,{color:'yellow',opacity:1,fillColor: 'blue',fillOpacity:.4}).addTo(map);
+  L.circle([4.64971, -74.06139], 5000,{color:'yellow',opacity:1,fillColor: 'blue',fillOpacity:.4}).addTo(map);
   
 </script>
 
@@ -614,7 +647,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 
  
 </body>

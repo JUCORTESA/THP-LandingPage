@@ -230,3 +230,21 @@
   });
 
 })(jQuery);
+
+// Init modal - menu as popup
+$(document).ready(function() {
+
+  if(window.location.href.indexOf('#menu') != -1) {
+    $('#myModal').modal('show');
+  }
+
+});
+
+
+const targetElement = document.getElementById("myModal"); //only popup can scroll
+
+//put this when popup opens, to stop body scrolling
+bodyScrollLock.disableBodyScroll(targetElement);
+
+//put this when close popup and show scrollbar in body
+bodyScrollLock.enableBodyScroll(targetElement);
